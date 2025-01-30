@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .footer-container {
-            bottom:0;
+        /* Đảm bảo trang có chiều cao đầy đủ */
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Nội dung chính co giãn, đẩy footer xuống */
+        .content {
+            flex: 1;
         }
     </style>
 </head>
@@ -62,14 +69,12 @@
     </section>
 
     <!-- Footer -->
-    <div class="footer-container">
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p class="mb-0">&copy; 2023 Câu lạc bộ trường THPT Phạm Hồng Thái. All rights reserved.</p>
             <a href="lienhe.html" class="btn btn-primary mt-3">Liên hệ với chúng tôi</a>
         </div>
     </footer>
-    </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
